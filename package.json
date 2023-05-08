@@ -9,6 +9,7 @@
     "type": "git",
     "url": "https://github.com/GurYN/homebridge-iopool.git"
   },
+  "homepage": "https://github.com/GurYN/homebridge-iopool#readme",
   "bugs": {
     "url": "https://github.com/GurYN/homebridge-iopool/issues"
   },

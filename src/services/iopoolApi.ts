@@ -15,14 +15,14 @@ export class IopoolApi {
 
   public async getPools(): Promise<PoolModel[]> {
     if (!this._instance) {
-      return [];
+      return [] as PoolModel[];
     }
 
     try {
       const result = await this._instance.get('/pools');
-      return result.data;
+      return result.data as PoolModel[];
     } catch (error) {
-      return [];
+      return [] as PoolModel[];
     }
   }
 
@@ -33,7 +33,7 @@ export class IopoolApi {
 
     try {
       const result = await this._instance.get('/pool/' + poolId);
-      return result.data;
+      return result.data as PoolModel;
     } catch (error) {
       return {} as PoolModel;
     }
