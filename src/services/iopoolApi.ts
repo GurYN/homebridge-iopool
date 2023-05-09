@@ -13,29 +13,29 @@ export class IopoolApi {
     });
   }
 
-  public async getPools(): Promise<PoolModel[]> {
+  public async getPools(): Promise<PoolModel[] | undefined> {
     if (!this._instance) {
-      return [] as PoolModel[];
+      return undefined;
     }
 
     try {
       const result = await this._instance.get('/pools');
       return result.data as PoolModel[];
     } catch (error) {
-      return [] as PoolModel[];
+      return undefined;
     }
   }
 
-  public async getPool(poolId: string): Promise<PoolModel> {
+  public async getPool(poolId: string): Promise<PoolModel | undefined> {
     if (!this._instance) {
-      return {} as PoolModel;
+      return undefined;
     }
 
     try {
       const result = await this._instance.get('/pool/' + poolId);
       return result.data as PoolModel;
     } catch (error) {
-      return {} as PoolModel;
+      return undefined;
     }
   }
 }

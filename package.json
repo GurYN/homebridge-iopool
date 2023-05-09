@@ -1,8 +1,12 @@
 {
-  "displayName": "iopool plugin",
+  "displayName": "Homebridge iopool",
   "name": "homebridge-iopool",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "a small plugin to monitor your swimming pool(s) using iopool.",
+  "author": {
+    "name": "Vincent CIBELLI",
+    "email": "contact@vincidev.com"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",

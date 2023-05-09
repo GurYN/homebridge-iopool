@@ -25,6 +25,38 @@
         "default": 10,
         "minimum": 1,
         "maximum": 60
+      },
+      "PhMin": {
+        "title": "pH Minimum",
+        "type": "number",
+        "required": true,
+        "default": 7.1,
+        "minimum": 6.8,
+        "maximum": 8.1
+      },
+      "PhMax": {
+        "title": "pH Maximum",
+        "type": "number",
+        "required": true,
+        "default": 7.7,
+        "minimum": 6.8,
+        "maximum": 8.1
+      },
+      "OrpMin": {
+        "title": "Orp Minimum",
+        "type": "number",
+        "required": true,
+        "default": 650,
+        "minimum": 550,
+        "maximum": 1000
+      },
+      "OrpMax": {
+        "title": "Orp Maximum",
+        "type": "number",
+        "required": true,
+        "default": 800,
+        "minimum": 550,
+        "maximum": 1000
       }
     }
   }

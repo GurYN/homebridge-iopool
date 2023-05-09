@@ -35,7 +35,7 @@ export class IopoolHomebridgePlatform implements DynamicPlatformPlugin {
     const api = new IopoolApi(this.config.token);
     const pools = await api.getPools();
 
-    if (pools.length === 0) {
+    if (pools === undefined || pools.length === 0) {
       this.log.error('No swimmingpool found, please check your token');
 
       return;
